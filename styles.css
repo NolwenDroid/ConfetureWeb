@@ -653,9 +653,27 @@ h1, h2, h3, p { margin-top: 0; }
 .business-page .privacy,
 .business-page .faq { position: relative; }
 .business-page .section-pad { padding-left: max(var(--page-pad), calc((100vw - 1780px) / 2)); padding-right: max(var(--page-pad), calc((100vw - 1780px) / 2)); }
-.business-page .manifesto { background: var(--business-accent); }
-.business-page .manifesto__label { color: rgba(8,11,16,.58); }
-.business-page .manifesto__copy span { color: rgba(8,11,16,.63); }
+.business-page .manifesto {
+  padding-top: clamp(88px, 8vw, 128px);
+  padding-bottom: clamp(88px, 8vw, 128px);
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: #0e121c;
+  color: var(--business-ink);
+}
+.business-page .manifesto__label { color: rgba(255,255,255,.46); }
+.business-page .manifesto__copy { max-width: 980px; }
+.business-page .manifesto__copy p {
+  margin-bottom: 28px;
+  font-size: clamp(36px, 4.2vw, 64px);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+.business-page .manifesto__copy span {
+  max-width: 720px;
+  color: var(--business-muted);
+  font-size: clamp(17px, 1.35vw, 21px);
+}
 
 @media (max-width: 1320px) {
   .business-hero__inner { grid-template-columns: minmax(400px, .9fr) minmax(560px, 1.1fr); gap: 48px; }
