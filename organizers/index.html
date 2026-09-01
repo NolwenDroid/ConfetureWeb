@@ -19,7 +19,7 @@
     <link rel="canonical" href="https://confeture.nolwendroid.ru/organizers/">
     <link rel="icon" href="/assets/app-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
-    <link rel="stylesheet" href="/styles.css?v=20260826-2">
+    <link rel="stylesheet" href="/styles.css?v=20260901-1">
   </head>
   <body class="business-page">
     <header class="site-header">
@@ -37,29 +37,65 @@
     </header>
 
     <main id="top">
-      <section class="hero hero--business" aria-labelledby="hero-title">
-        <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
-        <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
-        <div class="hero__content reveal">
-          <p class="eyebrow"><span></span> Confeture для организаторов событий</p>
-          <h1 id="hero-title">Новый опыт нетворкинга — <em>под брендом вашего события.</em></h1>
-          <p class="hero__lead">Участники видят профессиональные карточки пользователей рядом и обмениваются контактами после подтверждения. Для мероприятия настраиваются логотип и ключевые цвета интерфейса — без отдельной сборки приложения.</p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="mailto:nolwendroid@gmail.com?subject=%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%20Confeture%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F">Обсудить пилот <span aria-hidden="true">→</span></a>
-            <a class="button button--ghost" href="#experience">Увидеть опыт участника</a>
+      <section class="business-hero" aria-labelledby="hero-title">
+        <div class="business-hero__aurora" aria-hidden="true"></div>
+        <div class="business-hero__grid" aria-hidden="true"></div>
+
+        <div class="business-hero__inner">
+          <div class="business-hero__content reveal">
+            <p class="business-kicker"><span></span> Confeture for events</p>
+            <h1 id="hero-title">Нетворкинг,<br>который продолжает <em>бренд события.</em></h1>
+            <p class="business-hero__lead">Участники видят профессиональный контекст людей рядом и обмениваются контактами по взаимному согласию. Confeture принимает айдентику мероприятия — без отдельной сборки приложения.</p>
+
+            <div class="business-hero__actions">
+              <a class="business-button business-button--primary" href="mailto:nolwendroid@gmail.com?subject=%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%20Confeture%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F">Обсудить пилот <span aria-hidden="true">↗</span></a>
+              <a class="business-button business-button--secondary" href="#experience">Как это видит участник <span aria-hidden="true">↓</span></a>
+            </div>
+
+            <dl class="business-proof" aria-label="Ключевые возможности">
+              <div><dt>01</dt><dd>Без QR-кодов<br>и аккаунтов</dd></div>
+              <div><dt>02</dt><dd>Основной обмен<br>без интернета</dd></div>
+              <div><dt>03</dt><dd>Контакты только<br>после подтверждения</dd></div>
+            </dl>
           </div>
-          <ul class="hero__facts" aria-label="Условия текущей версии">
-            <li>Android 8.0+</li><li>Основной обмен без интернета</li><li>Без аккаунтов и QR-кодов</li>
-          </ul>
+
+          <div class="event-stage reveal" aria-label="Confeture с оформлением мероприятия North Forum 2026">
+            <div class="event-stage__topbar">
+              <div><span class="event-stage__pulse"></span> Event theme · live</div>
+              <span>North Forum 2026</span>
+            </div>
+
+            <div class="event-stage__body">
+              <div class="event-stage__note">
+                <span>Пространство события</span>
+                <strong>Айдентика остаётся<br>в каждом касании.</strong>
+                <small>Логотип · цвета · код конференции</small>
+              </div>
+
+              <div class="event-phone" aria-hidden="true">
+                <div class="event-phone__screen">
+                  <img src="/assets/app-contacts.png" width="1080" height="1920" alt="">
+                  <div class="event-phone__brand">
+                    <span>NORTH</span>
+                    <small>FORUM · 2026</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="event-controls">
+                <div class="event-controls__heading"><span>Тема события</span><b>Активна</b></div>
+                <div class="event-controls__logo">NF<span>26</span></div>
+                <div class="event-controls__row"><span>Основной цвет</span><i class="event-swatch event-swatch--dark"></i></div>
+                <div class="event-controls__row"><span>Акцент</span><i class="event-swatch event-swatch--mint"></i></div>
+                <div class="event-controls__code"><span>Код события</span><strong>NORTH2026</strong></div>
+              </div>
+
+              <div class="event-stage__status"><i></i><span><strong>Тема применена</strong><small>Участники видят бренд события</small></span></div>
+            </div>
+          </div>
         </div>
 
-        <div class="business-preview reveal" aria-label="Пример оформления Confeture под бренд мероприятия">
-          <div class="business-preview__bar"><span>Пример брендирования</span><i aria-hidden="true"></i></div>
-          <img src="/assets/confeture-customization.png" width="1800" height="1260" alt="Классическое оформление Confeture и пример темы мероприятия с другим логотипом и цветами">
-          <div class="floating-card business-preview__status"><span class="presence-dot"></span><div><strong>Тема события применена</strong><small>Логотип и ключевые цвета</small></div></div>
-        </div>
-
-        <a class="scroll-cue" href="#manifesto" aria-label="Перейти к следующему разделу"><span>Главное отличие</span><i aria-hidden="true">↓</i></a>
+        <a class="business-scroll" href="#manifesto" aria-label="Перейти к следующему разделу"><span>Что меняется для участника</span><i aria-hidden="true">↓</i></a>
       </section>
 
       <section id="manifesto" class="manifesto section-pad">
