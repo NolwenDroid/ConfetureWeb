@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080b16">
+    <meta name="description" content="Confeture — приложение для обмена контактами на конференциях, выставках и митапах. Показывает карточки пользователей рядом и передаёт телефон и email после взаимного подтверждения.">
+    <meta property="og:title" content="Confeture — деловые контакты с участниками рядом">
+    <meta property="og:description" content="Посмотрите карточки пользователей рядом и предложите обмен контактами — без QR-кодов и интернета.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://confeture.nolwendroid.ru/">
+    <meta property="og:image" content="https://confeture.nolwendroid.ru/assets/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Confeture — деловые контакты с участниками рядом">
+    <meta name="twitter:description" content="Карточки пользователей рядом. Телефон и email — после взаимного подтверждения.">
+    <meta name="twitter:image" content="https://confeture.nolwendroid.ru/assets/og.png">
+    <title>Confeture — обмен контактами на мероприятиях</title>
+    <link rel="canonical" href="https://confeture.nolwendroid.ru/">
+    <link rel="icon" href="assets/app-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css?v=20260826-1">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Confeture — на главную">
+        <img src="assets/confeture-logo.png" width="158" height="30" alt="Confeture">
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#how">Как работает</a>
+        <a href="#introverts">В своём темпе</a>
+        <a href="#privacy">Приватность</a>
+      </nav>
+      <a class="header-cta" href="https://play.google.com/store/apps/details?id=com.nolwendroid.confeture" target="_blank" rel="noopener">Google Play</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+        <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+        <div class="hero__content reveal">
+          <p class="eyebrow"><span></span> Нетворкинг на мероприятиях</p>
+          <h1 id="hero-title">Узнайте, кто рядом. <em>Обменяйтесь контактами.</em></h1>
+          <p class="hero__lead">Confeture показывает карточки других пользователей приложения поблизости. Выберите участника и отправьте запрос — телефон и email откроются у вас обоих после подтверждения.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="https://play.google.com/store/apps/details?id=com.nolwendroid.confeture" target="_blank" rel="noopener">Установить из Google Play <span aria-hidden="true">↗</span></a>
+            <a class="button button--ghost" href="#how">Как это работает</a>
+          </div>
+          <ul class="hero__facts" aria-label="Ключевые особенности">
+            <li>Без QR-кодов</li><li>Обнаружение и обмен без интернета</li><li>Без аккаунта</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Экран Confeture со списком участников рядом">
+          <div class="orbit orbit--one" aria-hidden="true"></div>
+          <div class="orbit orbit--two" aria-hidden="true"></div>
+          <div class="floating-card floating-card--left"><span class="presence-dot"></span><div><strong>Михаил Северин</strong><small>Директор по технологиям</small></div></div>
+          <div class="floating-card floating-card--right"><span class="request-icon" aria-hidden="true">↗</span><div><strong>Обмен подтверждён</strong><small>Телефон и email получены</small></div></div>
+          <div class="phone-shell">
+            <div class="phone-speaker" aria-hidden="true"></div>
+            <img src="assets/app-contacts.png" width="1080" height="1920" alt="Карточки пользователей рядом в приложении Confeture">
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#manifesto" aria-label="Перейти к следующему разделу"><span>Как работает</span><i aria-hidden="true">↓</i></a>
+      </section>
+
+      <section id="manifesto" class="manifesto section-pad">
+        <div class="manifesto__label reveal">Главное отличие</div>
+        <div class="manifesto__copy reveal">
+          <p>QR-код помогает обменяться контактом. <strong>Confeture сначала показывает, кто рядом.</strong></p>
+          <span>На конференции, выставке или митапе вы увидите карточки тех, у кого установлен Confeture и включён обмен.</span>
+        </div>
+      </section>
+
+      <section id="how" class="how section-pad" aria-labelledby="how-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow eyebrow--dark"><span></span> Как работает</p>
+          <h2 id="how-title">Три шага<br>до нового контакта</h2>
+          <p>Без камеры, QR-кодов, ссылок и Bluetooth-сопряжения.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal"><span class="step__number">01</span><div class="step__icon" aria-hidden="true">◉</div><h3>Заполните карточку</h3><p>Добавьте имя, фото, компанию и должность. Затем включите режим обмена.</p></article>
+          <article class="step reveal"><span class="step__number">02</span><div class="step__icon" aria-hidden="true">⌁</div><h3>Посмотрите, кто рядом</h3><p>Confeture покажет карточки других пользователей приложения поблизости.</p></article>
+          <article class="step reveal"><span class="step__number">03</span><div class="step__icon" aria-hidden="true">↗</div><h3>Отправьте запрос</h3><p>После подтверждения вы оба получите телефон и email друг друга.</p></article>
+        </div>
+
+        <div class="product-showcase reveal">
+          <div class="product-showcase__copy">
+            <p class="micro-label">До первого разговора</p>
+            <h3>Сначала — карточка.<br>Потом — контакт.</h3>
+            <p>QR-код передаёт данные человека, которого вы уже встретили. Confeture заранее показывает карточки пользователей поблизости — чтобы вы понимали, с кем хотите обменяться контактами.</p>
+            <ul class="check-list">
+              <li><span>✓</span> Имя, фото, компания и должность до запроса</li>
+              <li><span>✓</span> Телефон и email после взаимного подтверждения</li>
+              <li><span>✓</span> Обмен напрямую между телефонами</li>
+            </ul>
+          </div>
+          <div class="screens-stack" aria-label="Экраны приложения Confeture">
+            <div class="mini-phone mini-phone--back"><img src="assets/app-my-card.png" width="1080" height="1920" loading="lazy" alt="Моя визитка в Confeture"></div>
+            <div class="mini-phone mini-phone--front"><img src="assets/app-contact-details.png" width="1080" height="1920" loading="lazy" alt="Полученный деловой контакт в Confeture"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="introverts" class="introverts section-pad" aria-labelledby="introverts-title">
+        <div class="introverts__top reveal">
+          <p class="eyebrow"><span></span> Нетворкинг в своём темпе</p>
+          <h2 id="introverts-title">Деловой контакт может начаться ещё до разговора.</h2>
+          <p>Посмотрите карточки пользователей рядом, предложите обмен в приложении, а разговор начните тогда, когда вам удобно.</p>
+        </div>
+        <div class="contrast-grid">
+          <article class="contrast-card contrast-card--old reveal"><span class="contrast-card__tag">На мероприятии</span><ul><li><span>×</span> Ориентироваться по бейджам</li><li><span>×</span> Подходить без контекста</li><li><span>×</span> Искать удобный момент</li><li><span>×</span> Запрашивать контакт в разговоре</li></ul></article>
+          <article class="contrast-card contrast-card--new reveal"><span class="contrast-card__tag">С Confeture</span><ul><li><span>✓</span> Видеть пользователей рядом</li><li><span>✓</span> Знать имя, компанию и должность</li><li><span>✓</span> Отправлять запрос в приложении</li><li><span>✓</span> Получать контакты после подтверждения</li></ul></article>
+        </div>
+        <p class="big-line reveal">Сначала контекст.<br><em>Потом разговор.</em></p>
+      </section>
+
+      <section id="privacy" class="privacy section-pad" aria-labelledby="privacy-title">
+        <div class="privacy__copy reveal">
+          <p class="eyebrow eyebrow--dark"><span></span> Приватность</p>
+          <h2 id="privacy-title">Телефон и email —<br>только после подтверждения</h2>
+          <p>До обмена другие пользователи видят имя, фото, компанию, должность и сайт. Телефон и email передаются напрямую между двумя устройствами после взаимного подтверждения.</p>
+          <a class="text-link" href="privacy-policy.html" target="_blank" rel="noopener">Политика конфиденциальности <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="privacy-card reveal">
+          <div class="privacy-card__header"><span class="lock" aria-hidden="true">●</span><div><strong>Прямой обмен</strong><small>между двумя телефонами</small></div></div>
+            <div class="data-row"><div><span>Карточка участника</span><small>Имя · фото · компания · должность · сайт</small></div><b>До запроса</b></div>
+            <div class="data-row data-row--private"><div><span>Контактные данные</span><small>Телефон · email</small></div><b>После подтверждения</b></div>
+          <div class="privacy-card__footer"><span>Bluetooth Low Energy</span><span>Без центральной базы контактов</span></div>
+        </div>
+      </section>
+
+      <section id="download" class="download section-pad" aria-labelledby="download-title">
+        <div class="download__glow" aria-hidden="true"></div>
+        <div class="download__content reveal">
+          <img class="app-icon" src="assets/app-icon.png" width="512" height="512" alt="">
+          <p class="eyebrow"><span></span> Только в Google Play</p>
+          <h2 id="download-title">Установите Confeture<br>перед следующим мероприятием</h2>
+          <p>Заполните карточку и включите обмен на следующей конференции, выставке или митапе.</p>
+          <div class="download__actions"><a class="button button--light" href="https://play.google.com/store/apps/details?id=com.nolwendroid.confeture" target="_blank" rel="noopener">Установить из Google Play <span aria-hidden="true">↗</span></a><span>Android 8.0 и новее</span></div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section-pad" aria-labelledby="faq-title">
+        <div class="section-heading reveal"><p class="eyebrow eyebrow--dark"><span></span> Коротко о главном</p><h2 id="faq-title">Вопросы и ответы</h2></div>
+        <div class="faq-list reveal">
+          <details><summary>Кого я увижу рядом?<span>+</span></summary><p>Других пользователей Confeture поблизости, у которых включён режим обмена.</p></details>
+          <details><summary>Что увидят обо мне?<span>+</span></summary><p>Имя, фото, компанию, должность и сайт. Телефон и email остаются закрытыми до взаимного подтверждения обмена.</p></details>
+          <details><summary>Как передаются телефон и email?<span>+</span></summary><p>Один пользователь отправляет запрос, второй подтверждает его. После этого данные передаются напрямую между двумя телефонами.</p></details>
+          <details><summary>Нужны интернет или сопряжение по Bluetooth?<span>+</span></summary><p>Нет. Обнаружение и обмен работают через Bluetooth Low Energy без интернета, аккаунта, QR-кода и системного сопряжения устройств.</p></details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__brand"><img src="assets/confeture-logo.png" width="158" height="30" alt="Confeture"><p>Карточки рядом. Контакты — по взаимному согласию.</p></div>
+      <div class="footer__links"><a href="#how">Как работает</a><a href="#privacy">Приватность</a><a href="/organizers/">Для организаторов</a><a href="mailto:nolwendroid@gmail.com">Связаться</a></div>
+      <div class="footer__meta"><span>© 2026 NolwenDroid</span><span>Android-приложение Confeture</span></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

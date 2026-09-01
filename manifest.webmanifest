@@ -1,0 +1,16 @@
+{
+  "name": "Confeture",
+  "short_name": "Confeture",
+  "description": "Обмен контактами с пользователями поблизости на конференциях, выставках и митапах.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080b16",
+  "theme_color": "#080b16",
+  "icons": [
+    {
+      "src": "assets/app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
