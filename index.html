@@ -19,7 +19,7 @@
     <link rel="canonical" href="https://confeture.nolwendroid.ru/">
     <link rel="icon" href="assets/app-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="styles.css?v=20260826-1">
+    <link rel="stylesheet" href="styles.css?v=20260902-exchange">
   </head>
   <body>
     <header class="site-header">
@@ -27,6 +27,7 @@
         <img src="assets/confeture-logo.png" width="158" height="30" alt="Confeture">
       </a>
       <nav class="nav" aria-label="Основная навигация">
+        <a href="#exchange">Без интернета</a>
         <a href="#how">Как работает</a>
         <a href="#introverts">В своём темпе</a>
         <a href="#privacy">Приватность</a>
@@ -71,6 +72,29 @@
           <p>Confeture показывает участников конференции рядом и позволяет обмениваться контактами прямо на площадке.</p>
           <span>После принятия запроса телефон и email сохраняются у обоих участников.</span>
         </div>
+      </section>
+
+      <section id="exchange" class="exchange-benefits section-pad" aria-labelledby="exchange-title">
+        <div class="exchange-benefits__heading reveal">
+          <p class="eyebrow"><span></span> Преимущества обмена</p>
+          <h2 id="exchange-title">Обмен напрямую<br>между смартфонами.</h2>
+          <p>Confeture передаёт данные между участниками поблизости через Bluetooth Low Energy (BLE).</p>
+        </div>
+        <div class="exchange-benefits__grid">
+          <article class="exchange-benefit reveal">
+            <h3>Без регистрации</h3>
+            <p>Профиль создаётся на смартфоне. Аккаунт, логин и пароль не нужны.</p>
+          </article>
+          <article class="exchange-benefit reveal">
+            <h3>Без Wi-Fi</h3>
+            <p>Поиск участников и обмен контактами работают без Wi-Fi и мобильного интернета.</p>
+          </article>
+          <article class="exchange-benefit reveal">
+            <h3>Данные на устройствах</h3>
+            <p>Профиль и полученные контакты хранятся локально, без центральной базы. Контакты остаются с вами после мероприятия.</p>
+          </article>
+        </div>
+        <p class="exchange-benefits__note reveal">Установите приложение заранее. На площадке обмен работает в радиусе BLE.</p>
       </section>
 
       <section id="how" class="how section-pad" aria-labelledby="how-title">
@@ -156,7 +180,7 @@
 
     <footer class="footer">
       <div class="footer__brand"><img src="assets/confeture-logo.png" width="158" height="30" alt="Confeture"><p>Участники рядом. Контакты — после принятия запроса.</p></div>
-      <div class="footer__links"><a href="#how">Как работает</a><a href="#privacy">Приватность</a><a href="/organizers/">Для организаторов</a><a href="mailto:nolwendroid@gmail.com">Связаться</a></div>
+      <div class="footer__links"><a href="#exchange">Без интернета</a><a href="#how">Как работает</a><a href="#privacy">Приватность</a><a href="/organizers/">Для организаторов</a><a href="mailto:nolwendroid@gmail.com">Связаться</a></div>
       <div class="footer__meta"><span>© 2026 NolwenDroid</span><span>Android-приложение Confeture</span></div>
     </footer>
 

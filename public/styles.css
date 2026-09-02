@@ -146,6 +146,16 @@ h1, h2, h3, p { margin-top: 0; }
 .mini-phone--back { top: 36px; left: 7%; transform: rotate(-8deg); opacity: .72; }
 .mini-phone--front { right: 2%; bottom: -8px; transform: rotate(5deg); }
 
+.exchange-benefits { background: var(--night-soft); }
+.exchange-benefits__heading { max-width: 920px; }
+.exchange-benefits__heading h2 { margin-bottom: 24px; font-size: clamp(38px, 5.3vw, 76px); font-weight: 700; line-height: 1.05; letter-spacing: -.045em; }
+.exchange-benefits__heading > p:last-child { max-width: 680px; margin-bottom: 0; color: rgba(255,255,255,.68); font-size: clamp(18px, 1.6vw, 23px); }
+.exchange-benefits__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 4vw, 64px); margin-top: clamp(40px, 5vw, 72px); }
+.exchange-benefit { padding-top: 24px; border-top: 1px solid rgba(168,169,216,.4); }
+.exchange-benefit h3 { margin-bottom: 14px; color: var(--lavender-light); font-size: clamp(24px, 2.1vw, 30px); line-height: 1.2; letter-spacing: -.02em; }
+.exchange-benefit p { max-width: 400px; margin-bottom: 0; color: rgba(255,255,255,.68); font-size: 17px; }
+.exchange-benefits__note { margin: 40px 0 0; color: rgba(255,255,255,.6); font-size: 14px; }
+
 .introverts { position: relative; overflow: hidden; background: var(--night); }
 .introverts::after { content: "CONFETURE"; position: absolute; z-index: 0; right: -20px; top: 60px; color: rgba(255,255,255,.025); font-size: 18vw; font-weight: 900; line-height: 1; letter-spacing: -.07em; pointer-events: none; }
 .introverts__top, .contrast-grid, .big-line { position: relative; z-index: 1; }
@@ -292,6 +302,9 @@ h1, h2, h3, p { margin-top: 0; }
   .floating-card--right { right: 2%; }
   .scroll-cue { display: none; }
   .manifesto { grid-template-columns: 1fr; gap: 28px; }
+  .exchange-benefits .eyebrow { justify-content: flex-start; }
+  .exchange-benefits__grid { grid-template-columns: 1fr; gap: 28px; }
+  .exchange-benefit p { max-width: 640px; }
   .steps { grid-template-columns: 1fr; }
   .step, .step:first-child, .step:last-child { min-height: auto; padding: 34px 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .step:last-child { border-bottom: 0; }
