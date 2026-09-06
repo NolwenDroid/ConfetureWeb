@@ -4,7 +4,7 @@ Official website for Confeture by NolwenDroid:
 
 - `/` — B2C page for participants;
 - `/organizers/` — B2B page for event organizers;
-- `/privacy-policy.html` — privacy policy for the Android app.
+- `/privacy-policy.html` — shared privacy policy for the Android and iOS apps.
 
 Production: https://confeture.nolwendroid.ru
 
