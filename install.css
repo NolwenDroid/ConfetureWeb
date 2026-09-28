@@ -51,8 +51,8 @@ a:focus-visible { outline: 3px solid #b9f4df; outline-offset: 6px; }
 .install-main { display: flex; flex: 1; align-items: center; justify-content: center; padding: 38px 24px 30px; }
 .install-content { width: 100%; max-width: 640px; text-align: center; }
 .app-icon { width: 80px; height: 80px; margin: 0 auto 24px; border-radius: 21px; box-shadow: 0 16px 48px rgba(0, 0, 0, .25), 0 0 0 1px rgba(255,255,255,.15); }
-h1 { margin: 0; font-size: clamp(38px, 5vw, 60px); font-weight: 800; line-height: 1.1; letter-spacing: -.045em; }
-h1 span { color: #c4c5ed; }
+h1 { display: flex; flex-direction: column; align-items: center; gap: 14px; margin: 0; font-size: 32px; font-weight: 700; line-height: 1.2; letter-spacing: -.025em; }
+.install-wordmark { width: 300px; max-width: 85%; height: auto; }
 .install-lead { margin: 18px 0 0; color: #b8bdcf; font-size: 20px; line-height: 1.5; }
 
 .store-options { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 540px; margin: 36px auto 0; }
@@ -82,8 +82,8 @@ h1 span { color: #c4c5ed; }
   .about-link { font-size: 13px; }
   .install-main { padding: 28px 20px 24px; }
   .app-icon { width: 68px; height: 68px; margin-bottom: 20px; border-radius: 18px; }
-  h1 { font-size: clamp(36px, 9.6vw, 46px); }
-  h1 span { display: block; }
+  h1 { gap: 12px; font-size: 28px; }
+  .install-wordmark { width: 250px; }
   .install-lead { margin-top: 16px; font-size: 17px; }
   .store-options { grid-template-columns: 1fr; gap: 12px; max-width: 380px; margin-top: 28px; }
   .store-option { flex-direction: row; justify-content: space-between; gap: 8px; min-height: 94px; padding: 12px 16px; border-radius: 16px; }
@@ -113,7 +113,8 @@ h1 span { color: #c4c5ed; }
   .install-header { padding-top: 10px; }
   .install-main { padding-top: 14px; padding-bottom: 14px; }
   .app-icon { width: 52px; height: 52px; margin-bottom: 14px; border-radius: 14px; }
-  h1 { font-size: 36px; }
+  h1 { gap: 10px; font-size: 26px; }
+  .install-wordmark { width: 220px; }
   .install-lead { margin-top: 12px; font-size: 16px; }
   .store-options { margin-top: 20px; gap: 10px; }
   .store-option { min-height: 88px; padding-block: 8px; }
@@ -123,5 +124,4 @@ h1 span { color: #c4c5ed; }
 
 @media (forced-colors: active) {
   .store-option, .getting-started__mark { border-color: LinkText; }
-  h1 span { color: CanvasText; }
 }
