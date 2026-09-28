@@ -17,38 +17,41 @@
   </head>
   <body>
     <div class="install-page">
-      <header class="install-header">
-        <a class="about-link" href="../">О приложении</a>
-      </header>
-
       <main id="main" class="install-main">
         <div class="install-content">
           <h1>Установите <img class="install-wordmark" src="../assets/confeture-wordmark.svg" width="1346" height="285" alt="Confeture"></h1>
-          <p class="install-lead">Находите участников рядом<br class="desktop-break"> и обменивайтесь контактами.</p>
-
-          <div class="store-options" aria-label="Выберите магазин приложений">
-            <a class="store-option" href="https://apps.apple.com/app/id6811127313" aria-label="Скачать Confeture в App Store для iPhone">
-              <span class="store-option__platform">Для iPhone <span class="store-option__version">iOS 16.0 и новее</span></span>
-              <span class="store-option__artwork"><img class="store-badge store-badge--apple" src="../assets/store-badges/app-store-ru.svg" width="120" height="40" alt="Загрузите в App Store"></span>
-            </a>
-            <a class="store-option" href="https://play.google.com/store/apps/details?id=com.nolwendroid.confeture" aria-label="Скачать Confeture в Google Play для Android">
-              <span class="store-option__platform">Для Android <span class="store-option__version">Android 8.0 и новее</span></span>
-              <span class="store-option__artwork"><img class="store-badge store-badge--google" src="../assets/store-badges/google-play-ru.png" width="646" height="250" alt="Доступно в Google Play"></span>
-            </a>
-          </div>
-
+          <p class="install-lead">Находите участников рядом и обменивайтесь контактами.</p>
           <p class="install-facts">Бесплатно <span aria-hidden="true">·</span> Без регистрации</p>
-          <div class="getting-started">
-            <span class="getting-started__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m7 12 3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            <p>После установки заполните профиль<br class="desktop-break"> и включите обмен в приложении.</p>
+
+          <div class="store-options" role="group" aria-label="Выберите магазин приложений">
+            <section class="store-option" aria-labelledby="iphone-title">
+              <div class="store-option__meta">
+                <h2 id="iphone-title">Для iPhone</h2>
+                <p class="store-option__version" id="iphone-requirements">iOS 16.0 и новее</p>
+              </div>
+              <a class="store-link" href="https://apps.apple.com/app/id6811127313" aria-label="Загрузите Confeture в App Store" aria-describedby="iphone-requirements">
+                <img class="store-badge" src="../assets/store-badges/app-store-ru.svg" width="120" height="40" alt="Загрузите в App Store">
+              </a>
+            </section>
+            <section class="store-option" aria-labelledby="android-title">
+              <div class="store-option__meta">
+                <h2 id="android-title">Для Android</h2>
+                <p class="store-option__version" id="android-requirements">Android 8.0 и новее</p>
+              </div>
+              <a class="store-link" href="https://play.google.com/store/apps/details?id=com.nolwendroid.confeture" aria-label="Скачать Confeture из Google Play" aria-describedby="android-requirements">
+                <img class="store-badge" src="../assets/store-badges/google-play-ru.svg" width="239" height="71" alt="Скачать из Google Play">
+              </a>
+            </section>
           </div>
         </div>
       </main>
 
       <footer class="install-footer">
-        <a href="../support.html">Нужна помощь?</a>
-        <span class="footer-divider" aria-hidden="true"></span>
-        <a href="../privacy-policy.html">Конфиденциальность</a>
+        <nav aria-label="Информация и поддержка">
+          <a href="../">О приложении</a>
+          <a href="../support.html">Помощь</a>
+          <a href="../privacy-policy.html">Конфиденциальность</a>
+        </nav>
       </footer>
     </div>
   </body>
