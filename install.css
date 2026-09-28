@@ -27,57 +27,71 @@ a:focus-visible { outline: 3px solid #b9f4df; outline-offset: 4px; }
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
-  background: radial-gradient(ellipse at 50% 22%, #191c2e 0, #080b16 68%);
+  background: radial-gradient(ellipse at 15% 12%, #191c2e 0, #080b16 68%);
 }
 
 .install-main {
   flex: 1;
-  display: grid;
-  place-items: center;
-  padding: 64px 24px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(64px, 16svh, 144px) 48px 64px;
 }
-.install-content { width: 100%; max-width: 32rem; text-align: center; }
-h1 { display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 0; font-size: 1.25rem; font-weight: 500; line-height: 1.4; }
+.install-content { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: start; gap: 64px; width: 100%; max-width: 64rem; }
+.install-intro { min-width: 0; }
+h1 { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; margin: 0; font-size: 1.125rem; font-weight: 500; line-height: 1.4; }
 .install-wordmark { width: 180px; max-width: 85%; height: auto; }
-.install-lead { max-width: 29ch; margin: 20px auto 0; color: #c2c6d4; font-size: 1.125rem; line-height: 1.55; text-wrap: pretty; }
-.install-facts { margin: 12px 0 0; color: #adb5c9; font-size: .875rem; line-height: 1.5; }
+.install-lead { max-width: 27ch; margin: 24px 0 0; color: #c2c6d4; font-size: 1.125rem; line-height: 1.55; text-wrap: pretty; }
+.install-facts { margin: 20px 0 0; color: #adb5c9; font-size: .875rem; line-height: 1.5; }
 .install-facts span { margin-inline: 8px; }
 
-.store-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 32px; }
-.store-option { min-width: 0; padding: 12px 0; }
+.store-options { display: grid; grid-template-columns: 1fr; min-width: 0; }
+.store-option { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; min-width: 0; padding: 24px 0; }
+.store-option:first-child { padding-top: 0; }
+.store-option + .store-option { border-top: 1px solid #35394b; }
+.store-option__meta { flex: 1 1 5rem; min-width: 0; }
 .store-option h2 { margin: 0; font-size: 1rem; font-weight: 600; line-height: 1.5; }
 .store-option__version { margin: 4px 0 0; color: #adb5c9; font-size: .875rem; line-height: 1.5; }
 /* Both original badges have no outer padding. At 48px high, reserve 12px clear space. */
-.store-link { display: inline-flex; align-items: center; justify-content: center; min-width: 188px; min-height: 72px; margin-top: 8px; padding: 12px; border-radius: 8px; text-decoration: none; }
+.store-link { display: inline-flex; align-items: center; justify-content: center; min-width: 188px; min-height: 72px; flex: 0 0 auto; margin: 0; padding: 12px; border-radius: 8px; text-decoration: none; }
 .store-link:hover { outline: 1px solid #8c95ac; outline-offset: 2px; }
 .store-link:focus-visible { outline-width: 3px; outline-color: #b9f4df; outline-offset: 4px; }
 .store-badge { width: auto; height: 48px; max-width: none; }
 
-.install-footer { padding: 0 20px max(24px, env(safe-area-inset-bottom)); color: #adb5c9; }
-.install-footer nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 0 20px; }
+.install-footer { padding: 0 48px max(24px, env(safe-area-inset-bottom)); color: #adb5c9; }
+.install-footer nav { display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 0 24px; max-width: 64rem; margin: 0 auto; }
 .install-footer a { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; line-height: 1.5; }
 .install-footer a:hover { color: #fff; }
 
+@media (max-width: 960px) {
+  .install-main { padding: 64px 32px 40px; }
+  .install-content { grid-template-columns: 1fr; gap: 36px; max-width: 30rem; }
+  .store-options { border-top: 1px solid #35394b; padding-top: 16px; }
+  .store-option { padding-block: 16px; }
+  .install-footer { padding-inline: 32px; }
+  .install-footer nav { max-width: 30rem; }
+}
+
 @media (max-width: 580px) {
-  .install-main { align-items: start; padding: clamp(40px, 9svh, 72px) 24px 32px; }
-  .install-content { max-width: 25rem; }
+  .install-main { padding: 48px 24px 32px; }
+  .install-content { max-width: 25rem; gap: 32px; }
   .install-wordmark { width: 170px; }
-  .install-lead { font-size: 1.0625rem; }
-  .store-options { grid-template-columns: 1fr; gap: 0; margin-top: 28px; }
-  .store-option { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; padding-block: 16px; text-align: left; }
-  .store-option + .store-option { border-top: 1px solid #35394b; }
-  .store-option__meta { flex: 1 1 5rem; min-width: 0; }
-  .store-link { flex: 0 0 auto; margin: 0; }
-  .install-footer nav { column-gap: 16px; }
+  .install-lead { max-width: 26ch; }
+  .store-option { column-gap: 12px; }
+  .install-footer { padding-inline: 24px; }
+  .install-footer nav { max-width: 25rem; column-gap: 16px; }
 }
 
 @media (max-width: 350px) {
-  .install-main { padding-inline: 16px; }
+  .install-main, .install-footer { padding-inline: 16px; }
   .store-option { column-gap: 8px; }
 }
 
 @media (max-height: 640px) {
   .install-main { padding-top: 32px; padding-bottom: 24px; }
+  .install-content { gap: 24px; }
+  .install-lead { margin-top: 16px; }
+  .install-facts { margin-top: 12px; }
 }
 
 @media (forced-colors: active) {
