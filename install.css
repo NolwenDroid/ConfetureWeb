@@ -36,21 +36,17 @@ a:focus-visible { outline: 3px solid #b9f4df; outline-offset: 6px; }
 .install-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: flex-start;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 26px 48px 0;
 }
-.brand { display: flex; align-items: center; min-height: 44px; }
-.brand img { width: 139px; height: 30px; object-fit: contain; }
 .about-link { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; color: #b7bbcb; }
 .about-link:hover, .install-footer a:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
 
 .install-main { display: flex; flex: 1; align-items: center; justify-content: center; padding: 38px 24px 30px; }
 .install-content { width: 100%; max-width: 640px; text-align: center; }
-.app-icon { width: 80px; height: 80px; margin: 0 auto 24px; border-radius: 21px; box-shadow: 0 16px 48px rgba(0, 0, 0, .25), 0 0 0 1px rgba(255,255,255,.15); }
 h1 { display: flex; flex-direction: column; align-items: center; gap: 14px; margin: 0; font-size: 32px; font-weight: 700; line-height: 1.2; letter-spacing: -.025em; }
 .install-wordmark { width: 300px; max-width: 85%; height: auto; }
 .install-lead { margin: 18px 0 0; color: #b8bdcf; font-size: 20px; line-height: 1.5; }
@@ -78,10 +74,8 @@ h1 { display: flex; flex-direction: column; align-items: center; gap: 14px; marg
 
 @media (max-width: 580px) {
   .install-header { padding: 18px 24px 0; gap: 16px; }
-  .brand img { width: 116px; height: auto; }
   .about-link { font-size: 13px; }
   .install-main { padding: 28px 20px 24px; }
-  .app-icon { width: 68px; height: 68px; margin-bottom: 20px; border-radius: 18px; }
   h1 { gap: 12px; font-size: 28px; }
   .install-wordmark { width: 250px; }
   .install-lead { margin-top: 16px; font-size: 17px; }
@@ -112,7 +106,6 @@ h1 { display: flex; flex-direction: column; align-items: center; gap: 14px; marg
 @media (max-height: 720px) and (max-width: 580px) {
   .install-header { padding-top: 10px; }
   .install-main { padding-top: 14px; padding-bottom: 14px; }
-  .app-icon { width: 52px; height: 52px; margin-bottom: 14px; border-radius: 14px; }
   h1 { gap: 10px; font-size: 26px; }
   .install-wordmark { width: 220px; }
   .install-lead { margin-top: 12px; font-size: 16px; }
