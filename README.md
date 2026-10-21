@@ -32,7 +32,7 @@ Then open `http://localhost:8765/`, `http://localhost:8765/organizers/`, or
 The website does not distribute APK files. Installation links point to the
 official store listings:
 
-- iPhone (iOS 16.0 or later): https://apps.apple.com/app/id6811127313
+- iPhone (iOS 16.0 or later): https://apps.apple.com/app/id6820051381
 - Android (8.0 or later): https://play.google.com/store/apps/details?id=com.nolwendroid.confeture
 
 ## Current screenshots
